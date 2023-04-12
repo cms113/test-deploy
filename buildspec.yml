@@ -16,6 +16,5 @@ phases:
       - npm run build
 artifacts:
   files:
-    - "**/*"
-  discard-paths: no
+    - "obj/template.yaml"
   base-directory: dist
