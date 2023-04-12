@@ -16,5 +16,5 @@ phases:
       - npm run build
 artifacts:
   files:
-    - "obj/template.yaml"
+    - "obj/svs3.template"
   base-directory: dist
