@@ -39,7 +39,6 @@ Resources:
               Forward: none
         Aliases:
           - !Sub "${DomainName}.com"
-          - !Sub "www.${DomainName}.com"
 
   Route53RecordSet:
     Type: "AWS::Route53::RecordSet"
