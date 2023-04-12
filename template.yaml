@@ -45,7 +45,7 @@ Resources:
     Properties:
       HostedZoneName: !Sub "${DomainName}.com."
       Comment: "DNS name for Vue application deployment"
-      Name: !Ref DomainName
+      Name: !Sub "${DomainName}.com."
       Type: A
       AliasTarget:
         DNSName: !GetAtt CloudFrontDistribution.DomainName
