@@ -26,7 +26,7 @@ Resources:
             S3OriginConfig:
               OriginAccessIdentity: ""
         ViewerCertificate:
-          AcmCertificateArn: "arn:aws:acm:eu-west-2:222370735241:certificate/db2f70ab-d788-4987-8852-4b4d13b603c8"
+          AcmCertificateArn: "arn:aws:acm:us-east-1:222370735241:certificate/20878e83-b9dc-4f86-8fa5-7345848aba43"
           SslSupportMethod: sni-only
           MinimumProtocolVersion: TLSv1.2_2018
         DefaultRootObject: index.html
