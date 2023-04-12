@@ -43,7 +43,7 @@ Resources:
   Route53RecordSet:
     Type: "AWS::Route53::RecordSet"
     Properties:
-      HostedZoneName: "${DomainName}."
+      HostedZoneName: "${DomainName}.com."
       Comment: "DNS name for Vue application deployment"
       Name: !Ref DomainName
       Type: A
@@ -53,4 +53,4 @@ Resources:
 
 Outputs:
   VueAppURL:
-    Value: !Sub "https://${DomainName}/"
+    Value: !Sub "https://${DomainName}.com"
