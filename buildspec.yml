@@ -16,4 +16,11 @@ phases:
       - npm run build
 artifacts:
   files:
-    - "*/**"
+    - "**/*"
+  base-directory: "dist"
+  name: "vue-app"
+  secondary-artifacts:
+    - name: "CloudFormation-template"
+      files:
+        - template.yaml
+        - serverlessConfig.json

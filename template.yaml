@@ -68,3 +68,7 @@ Resources:
 Outputs:
   VueAppURL:
     Value: !Sub "https://${DomainName}.com"
+  S3Bucket:
+    Value: !Ref S3Bucket
+    Export:
+      Name: S3Bucket
