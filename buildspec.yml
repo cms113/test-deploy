@@ -17,10 +17,3 @@ phases:
 artifacts:
   files:
     - "**/*"
-  base-directory: "dist"
-  name: "vue-app"
-  secondary-artifacts:
-    cloudFormation-files:
-      files:
-        - template.yaml
-        - serverlessConfig.json
