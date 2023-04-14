@@ -20,7 +20,7 @@ artifacts:
   base-directory: "dist"
   name: "vue-app"
   secondary-artifacts:
-    - name: "CloudFormation-template"
+    cloudFormation-files:
       files:
         - template.yaml
         - serverlessConfig.json
