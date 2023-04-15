@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to VIDA" />
+    <HelloWorld title="Cat facts" />
   </div>
 </template>
 

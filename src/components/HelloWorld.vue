@@ -1,6 +1,10 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>{{ title }}</h1>
+    <button @click="getCatFact" class="btn btn-outline-primary">
+      Click me
+    </button>
+    <p>{{ fact }}</p>
   </div>
 </template>
 
@@ -8,7 +12,17 @@
 export default {
   name: "HelloWorld",
   props: {
-    msg: String,
+    title: String,
+  },
+  data() {
+    return { fact: "" };
+  },
+  methods: {
+    async getCatFact() {
+      var response = await fetch("https://catfact.ninja/fact");
+      const data = await response.json();
+      this.fact = data.fact;
+    },
   },
 };
 </script>
