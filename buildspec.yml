@@ -17,11 +17,11 @@ phases:
 artifacts:
   files:
     - "**/*"
-    base-directory: 'dist'
-secondary-artifacts: 
-  template: 
-    files: 
+  base-directory: "dist"
+secondary-artifacts:
+  template:
+    files:
       - template.yaml
-  config: 
-    files: 
+  config:
+    files:
       - serverlessConfig.json
