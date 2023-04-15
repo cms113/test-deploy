@@ -23,4 +23,5 @@ artifacts:
       files:
         - template.yaml
     config:
-      files: serverlessConfig.json
+      files:
+        - serverlessConfig.json
